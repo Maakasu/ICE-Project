@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+object Rejse
+
+Rejsebookings *-- LoginPage
+LoginPage *-- CreateUser
+LoginPage "has a" *-- LoginIO
+User "has a"*-- LoginIO
+User *-- Options
+Rejsevalg *-- Destination
+Destination *-- Baggage
+Destination "has a" *-- Sæder
+Destination "has a" *-- Mad
+Sæder "has a" *-- Checkout
+Rejsebooking : + Main()
+CreateUser : + String username
+CreateUser : + String password
+CreateUser : + Users.txt
+LoginPage : + String UserInput()
+LoginPage : + getUserLogin()
+LoginPage : + CreateUser()
+LoginPage : + LoginUI()
+LoginIO : + LoginIO()
+LoginIO *-- UserDatabase
+
+
+
+
+
+@enduml
