@@ -7,11 +7,14 @@ LoginPage *-- CreateUser
 LoginPage "has a" *-- LoginIO
 User "has a"*-- LoginIO
 User *-- Options
-Rejsevalg *-- Destination
+
 Destination *-- Baggage
 Destination "has a" *-- Sæder
 Destination "has a" *-- Mad
 Sæder "has a" *-- Checkout
+Baggage "has a" *-- Checkout
+Mad "has a" *-- Checkout
+
 Rejsebooking : + Main()
 CreateUser : + String username
 CreateUser : + String password
@@ -22,6 +25,18 @@ LoginPage : + CreateUser()
 LoginPage : + LoginUI()
 LoginIO : + LoginIO()
 LoginIO *-- UserDatabase
+Destination : + getDestinations()
+Destination : + getTicket()
+Destination : + getTicketPrice()
+Baggage : + getAmount()
+Baggage : + getWeight()
+Baggage : + getBaggagePrice()
+Sæder : + getSeatsPrice()
+Sæder : + getRow()
+Sæder : + getSeatNumber()
+Mad : + getDish()
+Mad : + getFoodPrice()
+Checkout : + getOverview()
 
 
 
