@@ -36,7 +36,7 @@ Sæder : + getRow()
 Sæder : + getSeatNumber()
 Mad : + getDish()
 Mad : + getFoodPrice()
-Checkout : + getOverview()
+Checkout : + getTotalCost()
 
 
 
