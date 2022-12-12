@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class LoginPage implements ActionListener {
 
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("LoginPage");
     JButton loginButton = new JButton("Login");
     JButton resetButton = new JButton("Reset");
     JTextField userIDField = new JTextField();
