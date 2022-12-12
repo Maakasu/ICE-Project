@@ -52,6 +52,7 @@ public class LoginPage implements ActionListener {
         frame.setVisible(true);
     }
 
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == resetButton) {
@@ -81,4 +82,5 @@ public class LoginPage implements ActionListener {
             }
         }
     }
+
 }
