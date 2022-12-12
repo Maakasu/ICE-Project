@@ -1,0 +1,6 @@
+From; To; price; flight time;
+København; Thailand, Bangkok; 5000; 14;
+København; Spanien, Barcelona; 2000; 3;
+København; Cypern, Larnaca; 3000; 7;
+København; Sverige, Stockholm; 700; 1;
+København; Norge, Oslo; 700; 1;
