@@ -64,12 +64,12 @@ public class BookNow implements ActionListener {
         frame.add(chooseDestination);
 
         chooseDestination.setIcon(image);
-<<<<<<< HEAD
+
         frame.add(chooseDestination);
         frame.add(CphToLarnaca);
-=======
 
->>>>>>> 92b8918e1301964a0f6e69c7dcb7264923fdb64a
+
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800,800);
         frame.setLayout(null);
