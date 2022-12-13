@@ -56,5 +56,10 @@ public class WelcomePage implements ActionListener {
             frame.dispose();
             BookNow bookNow = new BookNow();
         }
+        else if(e.getSource()==yourBookingsButton)
+            frame.dispose();
+            Bookings bookins = new Bookings();
     }
+
+
 }
