@@ -6,7 +6,7 @@ public class Bookings {
     JFrame frame = new JFrame("BookNowPage");
     JLabel chooseDestination = new JLabel("Your Bookings:");
 
-    ImageIcon image = new ImageIcon("Planeinsky.jpg");
+    ImageIcon image = new ImageIcon("Plane-in-sky.jpg");
     Bookings(){
 
 
