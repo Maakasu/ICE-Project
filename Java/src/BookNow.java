@@ -72,10 +72,15 @@ public class BookNow implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == cphLarnacaButton) {
             frame.dispose();
-            CphLarnaca cphLar = new CphLarnaca();
+            cphLarnaca cphLar = new cphLarnaca();
+        } else if (e.getSource() == cphSingaporeButton) {
+            frame.dispose();
+            cphSingapore cphSingapore = new cphSingapore();
+        }else if(e.getSource() == cphNewYorkButton) {
+            frame.dispose();
+            cphNewYork cphNewYork = new cphNewYork();
         }
     }
 }
-
 
 

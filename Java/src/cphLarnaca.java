@@ -1,13 +1,12 @@
 import javax.swing.*;
-import java.awt.*;
 
-public class CphLarnaca {
+public class cphLarnaca {
 
-    JFrame frame = new JFrame("bitches");
+    JFrame frame = new JFrame(" ");
 
 
     ImageIcon image = new ImageIcon("img.png");
-    CphLarnaca() {
+    cphLarnaca() {
 
 
 
