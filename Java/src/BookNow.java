@@ -25,7 +25,7 @@ public class BookNow implements ActionListener {
         pickYourDestination.setBounds(0, 0, 800, 800);
         pickYourDestination.setFont(new Font(null, Font.PLAIN, 25));
         pickYourDestination.setForeground(Color.black);
-        pickYourDestination.setText("Choose your destination");
+        pickYourDestination.setText("");
         pickYourDestination.setHorizontalTextPosition(JLabel.CENTER);
         pickYourDestination.setVerticalTextPosition(JLabel.TOP);
 
@@ -72,7 +72,7 @@ public class BookNow implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == cphLarnacaButton) {
             frame.dispose();
-            cphLarnaca cphLar = new cphLarnaca();
+            CphLarnaca cphLar = new CphLarnaca();
         } else if (e.getSource() == cphSingaporeButton) {
             frame.dispose();
             cphSingapore cphSingapore = new cphSingapore();
