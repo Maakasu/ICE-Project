@@ -58,7 +58,7 @@ public class CphLarnaca {
         jSpinner1.setBounds(100,250,75,25);
         jSpinner2.setBounds(100,300,75,25);
 
-        price.setBounds(175,325,75,25);
+        price.setBounds(175,325,150,25);
 
 
 
