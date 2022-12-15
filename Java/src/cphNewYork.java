@@ -6,7 +6,7 @@ import java.awt.*;
 public class cphNewYork {
 
 
-    JFrame frame = new JFrame(" Destination -> New York City");
+    JFrame frame = new JFrame("cphNewYork");
 
     JLabel pictureLabel = new JLabel("");
 

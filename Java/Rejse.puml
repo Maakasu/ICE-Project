@@ -3,7 +3,6 @@
 object Rejse
 
 Rejsebookings *-- LoginPage
-LoginPage *-- CreateUser
 LoginPage "has a" *-- LoginIO
 User "has a"*-- LoginIO
 User *-- Options
@@ -16,9 +15,6 @@ Baggage "has a" *-- Checkout
 Mad "has a" *-- Checkout
 
 Rejsebooking : + Main()
-CreateUser : + String username
-CreateUser : + String password
-CreateUser : + Users.txt
 LoginPage : + String UserInput()
 LoginPage : + getUserLogin()
 LoginPage : + CreateUser()

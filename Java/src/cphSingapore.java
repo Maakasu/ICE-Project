@@ -3,7 +3,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class cphSingapore {
-    JFrame frame = new JFrame(" ");
+    JFrame frame = new JFrame(" cphSingapore");
 
     JLabel pictureLabel = new JLabel("");
 
