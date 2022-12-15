@@ -1,6 +1,7 @@
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import java.awt.event.ActionEvent;
 
 public class cphSingapore {
     JFrame frame = new JFrame(" cphSingapore");
@@ -12,6 +13,8 @@ public class cphSingapore {
     JLabel jLabel1 = new JLabel("Children u13:");
 
     JLabel jLabel2 = new JLabel("Baggage:");
+
+    JButton buyButton = new JButton("Buy");
 
 
     JSpinner jspinner = new JSpinner();
@@ -56,6 +59,8 @@ public class cphSingapore {
         jSpinner1.setBounds(100,250,75,25);
         jSpinner2.setBounds(100,300,75,25);
 
+        buyButton.setBounds(500, 325, 150, 25);
+
         price.setBounds(175,325,200,25);
 
         frame.add(jLabel);
@@ -66,16 +71,22 @@ public class cphSingapore {
         frame.add(jSpinner2);
         frame.add(price);
         frame.add(pictureLabel);
+        frame.add(buyButton);
+
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
         frame.setLayout(null);
         frame.setVisible(true);
     }
-    private void calculatePrice(int Adult,int children, int baggage){
+    private void calculatePrice(int Adult,int children, int baggage) {
         double cost = Adult * 3000 + children * 1000 + baggage * 700;
         price.setText("Price: " + cost + " kr.");
-
+    }
+        public void actionPerformed(ActionEvent e) {
+            if(e.getSource() == buyButton) {
+                //price
+            }
+        }
     }
 
-}
