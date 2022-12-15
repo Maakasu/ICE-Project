@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class cphSingapore {
-    JFrame frame = new JFrame(" ");
+    JFrame frame = new JFrame(" cphSingapore");
 
     JLabel pictureLabel = new JLabel("");
 
